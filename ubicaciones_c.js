@@ -1,7 +1,7 @@
 async function listarUbicacionesConElementos() {
     try {
-        const resUbicaciones = await fetch('http://localhost:3000/ubicaciones');
-        const resProductos = await fetch('http://localhost:3000/productos');
+    const ubicaciones = JSON.parse(localStorage.getItem("ubicaciones")) || [];
+    const productos = JSON.parse(localStorage.getItem("productos")) || [];
 
         if (!resUbicaciones.ok || !resProductos.ok) throw new Error('Error al cargar datos');
 
