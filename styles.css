@@ -1,0 +1,61 @@
+.hora {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+#utc {
+    top: 40px;
+    right: 50px;
+    background-color: blue;
+}
+#local {
+    top: 40px;
+    left: 50px;
+    background-color: blue;
+}
+
+#encabezado {
+    position: fixed;  /* Fija el encabezado en la parte superior */
+    top: 0;           /* Lo posiciona en la parte superior */
+    left: 50%;        /* Lo centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    text-align: center; /* Centra el texto dentro del h1 */
+    width: 80%;      /* O un valor específico si no quieres que ocupe toda la pantalla */
+    background-color: #f8f8f8; /* Color de fondo opcional */
+    padding: 15px 0; /* Espaciado para mejorar apariencia */
+    z-index: 1000;   /* Para que esté sobre otros elementos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para resaltar */
+}
+
+/* Ajustar el body para evitar márgenes por defecto */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegurar que el body ocupe toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    width: 80%; /* Ocupa el 40% del ancho de la pantalla */
+    height: 60vh; /* Ocupa el 40% de la altura de la pantalla */
+    background-color: #e0e0e0; /* Color de fondo opcional */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    margin-top: 20px; /* Para evitar que quede debajo del encabezado */
+}

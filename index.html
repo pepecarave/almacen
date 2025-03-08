@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacén</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Configuración PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+
+<body>
+    <header>
+        <div id="utc" class="hora"></div>
+        <h1 id="encabezado">Gestión de Productos en el Almacén</h1>
+        <div id="local" class="hora"></div>
+    </header>
+
+    <nav>        
+        <h2>Agregar Producto</h2>
+        <input type="text" id="nombre" placeholder="Elemento">
+        <select id="ubicacion">
+            <option value="">Seleccionar Ubicación</option>
+        </select>
+        <input type="number" id="stock" placeholder="Stock disponible">
+        <button onclick="agregarProducto()">Agregar Producto</button>
+        
+
+        <h2>Agregar Ubicación</h2>
+        <input type="number" id="ubicacion-id" placeholder="ID Ubicación">
+        <input type="text" id="descripcion" placeholder="Descripción">
+        <button onclick="agregarUbicacion()">Agregar Ubicación</button>
+        <button onclick="window.location.href='ubicaciones.html'">Ver Gestión de Ubicaciones</button>
+        
+    </nav>
+
+    <main class="contenido">
+
+        <h2>Elementos</h2>
+        <button onclick="cargarProductos()">Visualizar Elementos</button>
+        <div id="tabla-productos"></div>
+
+        <h2>Ubicaciones</h2>
+        <button onclick="cargarUbicaciones()">Visualizar Ubicaciones</button>
+        <div id="tabla-ubicaciones"></div>
+
+        <section>
+            <article></article>
+        </section>
+        <aside></aside>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+    <script src="./ubicaciones.js"></script></body>
+</html>

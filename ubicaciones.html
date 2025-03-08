@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Ubicaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="utc" class="hora"></div>
+        <h1 id="encabezado">Gestión de Ubicaciones en el Almacén</h1>
+        <div id="local" class="hora"></div>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='index.html'">Volver a Productos</button>
+    </nav>
+
+    <main class="contenido">
+
+        <h2>Ubicaciones con sus Elementos</h2>
+        <button onclick="listarUbicacionesConElementos()">Listar Ubicaciones</button>
+        <div id="tabla-ubicaciones-elementos"></div>
+
+        <h2>Elementos con sus Ubicaciones</h2>
+        <button onclick="listarElementosConUbicaciones()">Listar Elementos</button>
+        <div id="tabla-elementos-ubicaciones"></div>
+
+        <section>
+            <article></article>
+        </section>
+        <aside></aside>
+    </main>
+    <footer></footer>
+	<script src="ubicaciones_c.js"></script>
+</body>
+</html>
